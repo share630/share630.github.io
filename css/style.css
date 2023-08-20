@@ -1,0 +1,370 @@
+
+.fullscreen-bg{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 100;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
+}
+
+.fullscreen-bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 5);
+}
+/*--
+.container {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  font-size: 0.825rem;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+*/
+
+.container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  font-size: 0.825rem;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.container-center {
+  text-align: center;
+  padding: 5px;
+  font-size: 1050%
+}
+
+.clocks{
+  display: block;
+  cursor: default;
+  letter-spacing: -5px;
+  font-weight: 500;
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: 1150%;
+  font-weight: 455;
+  text-align: center;
+  color: hsl(0 0% 100%);
+  text-shadow: 3 3px 5px rgba(0,0,0,.5);
+  padding-top: 20px;
+}
+
+body, input, select, textarea, button {
+  font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.question {
+  padding-bottom: 15px;
+  display: inline-block;
+  line-height: 1.2;
+  white-space: normal;
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: 3.375rem;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(0 0% 100%);
+  text-shadow: 3 3px 5px rgba(0,0,0,.5);
+}
+
+.input-container1 {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.input-container2 {
+  display: block;
+  text-align: center;
+}
+
+
+.intro-input {
+  color:hsl(0 0% 100%);
+  background: transparent;
+  width: 100%;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  font-size: 2.375rem;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  margin-bottom: 40px;
+}
+
+.intro-submit {
+  --h-padding: 23px;
+  --v-padding: 9px;
+  padding: var(--v-padding) var(--h-padding) calc(var(--v-padding) + 1px);
+  display: inline-flex;
+  background: rgba(0,0,0,.15);
+  border: 1.5px solid rgba(255,255,255,.7);
+  border-radius: 50px;
+  box-shadow: 0 0 12px rgba(0,0,0,.15);
+  color: #fff;
+  cursor: pointer;
+  font-size: .9375rem;
+  font-weight: 500;
+  outline: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+button {
+  --h-padding: 6px;
+  --v-padding: 6px;
+  padding: var(--v-padding) var(--h-padding));
+  display: inline-flex;
+  background: rgba(0,0,0,.15);
+  border: 1.5px solid rgba(255,255,255,.7);
+  border-radius: 50px;
+  box-shadow: 0 0 12px rgba(0,0,0,.15);
+  color: #fff;
+  cursor: pointer;
+  font-size: .9375rem;
+  font-weight: 500;
+  outline: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.center-intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-container {
+  max-width: 100%;
+  padding: 0 40px;
+  position: relative;
+  top: -8px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-col {
+  flex: 1 1 100%;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+.hover-submit:hover {
+  outline: 2px solid rgba(255,255,255,255);
+}
+
+.center-outro-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.center-outro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.outro-container {
+  max-width: 100%;
+  padding: 0 40px;
+  position: absolute;
+  top: -8px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outro-col {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 60px;
+  flex: 1 1 100%;
+}
+
+
+
+.outro-greeting {
+  overflow: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+  line-height: 1.2;
+  white-space: normal;
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: 3.375rem;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(0 0% 100%);
+  text-shadow: 3 3px 5px rgba(0,0,0,.5);
+}
+
+.outro-question {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: inline-block;
+  line-height: 1.2;
+  white-space: normal;
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: 3.375rem;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(0 0% 100%);
+  text-shadow: 3 3px 5px rgba(0,0,0,.5);
+}
+
+.outro-input {
+  
+  color:hsl(0 0% 100%);
+  background: transparent;
+  width: 100%;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  font-size: 2.375rem;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  margin-bottom: 20px;
+}
+
+
+.outro-container1 {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.outro-container2 {
+  padding-top: 30px;
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+  overflow-wrap: break-word;
+  font-size: 1.375rem;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(0 0% 100%);
+  text-shadow: 3 3px 5px rgba(0,0,0,.5);
+  
+}
+
+
+.outro-col2 {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  bottom: -10px;
+  left: -6px;
+  right: 6px;
+  top: 100%;
+  position: absolute;
+}
+
+
+
+
+.outro-quote {
+  bottom: -10px;
+  left: -6px;
+  right: 6px;
+  top: 100%;
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+  display: inline-block;
+  line-height: 1.2;
+  white-space: normal;
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: 1.075rem;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(0 0% 100%);
+  text-shadow: 3 3px 5px rgba(0,0,0,.5);
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:nth-of-type(1n+5) {
+  display: none;
+  text-align: center;
+  
+}
+
+.weather2 {
+  padding-right: 20px;
+  padding: 11px 10px 10px;
+  text-align: right;
+  color: hsl(0 0% 100%);
+  text-shadow: 3 3px 5px rgba(0,0,0,.5);
+}
+
+.hidden {
+  display: none;
+}
